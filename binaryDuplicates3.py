@@ -7,8 +7,7 @@ def binary_search_rec(input_keys, i, low, high):
     #   return newList.append(-1)
     mid = low + ((high-low)//2)
     if input_keys[mid]==i and input_keys[mid-1] != i: 
-        print(mid)
-        return newList.append(i)
+        return newList.append(mid)
     elif input_keys[mid] == i and input_keys[mid-1] == i: 
         while input_keys[mid-1] == i: 
             mid = mid-1
